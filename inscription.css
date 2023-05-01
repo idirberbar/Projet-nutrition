@@ -1,0 +1,203 @@
+
+body {
+    margin: 0;
+    color: #000000;
+}
+
+.container-raised {
+    margin: 30px;
+    padding: 10px;
+    color: #000000;
+    position: relative;
+    overflow:hidden;
+    min-height: 400px;
+    width: 768px;
+    max-width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 32, 63, .45),  0 8px 8px rgba(0, 32, 63, .45);
+    margin-left: 100px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    display: grid;
+
+}
+
+
+.semi-bold {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+
+
+
+
+
+h3 { /*titre de chaque box*/
+    margin: 2px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    
+}
+
+.body-form {
+    padding: 15px;
+    font-size: 12px;
+    
+    
+}
+
+
+.body-form-row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+     
+    
+}
+
+
+.account-info { /*rgrtsdfffttt*/
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+   
+}
+
+.account-info-row { /*premiere box*/
+    margin-bottom: 10px;
+    margin-top: 10px;
+    vertical-align: middle;
+    
+    
+}
+
+
+.account-info .typelabel { /*Nom, prenom, mail, mdp ...*/
+    width: 30%;
+    
+   
+}
+
+.account-info .typespan {
+    width: 60%;
+    
+   
+}
+
+.typespan {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    
+}
+
+
+.typespan label { /* homme/femme */
+    margin-right: 10px;
+    font-size: 14px;
+    padding-left: 2px;
+    background-color: #bedfff;
+}
+
+.dropdown { /* jour,mois, annee,ft,in,cm*/
+    display: inline-block;
+    margin-right: 3px;
+    margin-left: 3px;
+    background-color: rgb(255, 255, 255);
+    
+    
+}
+
+.text-box {
+    display:inline ;
+    min-width: 75px;
+    background-color: #bedfff;
+    
+    
+
+}
+
+.num-box { /* champs:annee,cm, poids*/
+    width: 100px;
+    font-size: 16px;
+    background-color: #bedfff;
+    
+}
+
+
+.center-boxes { /*box check all ect... */
+    margin: auto;
+    width: 80%;
+    
+}
+
+.typelabel {
+    width: 20%;
+    margin-right: 15px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    
+}
+
+
+
+.form-check { /*champ check*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    display: inline-flex;
+   
+    
+}
+
+.form-check-input {
+    min-width: 28px;
+
+}
+
+.form-check-label {
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 10px;
+    text-align: left;
+    
+}
+
+
+
+
+.sub-title {
+    margin: 1px;
+    display: block;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+button{
+    background-color: #bedfff;
+    color: #00203f;
+    border: 1px solid #bedfff;
+    font-size: 16px;
+    font-weight: bold;
+    padding:16px 32px;
+    margin-top:24px;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    border-color: rgba(0, 32, 63, .45);
+    transition: .2s ease-in;
+}
+
+button:hover{
+    cursor:pointer;
+    background-color: #00203f;
+    color:#bedfff;
+}
+
+button:active{
+    transform: scale(.95);
+}
+

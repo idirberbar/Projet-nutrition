@@ -1,0 +1,94 @@
+/* Styles pour le corps de la page */
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  /* Styles pour la bannière */
+  .banner {
+    background-color: #178686;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  /*Cet élément est un conteneur pour le logo et le menu de navigation*/
+  .banner .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /*Cet élément contient le titre du site*/
+.banner .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    font-family: 'Caveat', cursive;
+  }
+  /*Cet élément contient le sous-titre du site*/
+  .banner .logo p {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Pacifico', cursive;
+  }
+  .banner img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+  
+  /* Styles pour le menu */
+  .navbar {
+    background-color: #178686;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  /*l'élément HTML utilisé pour définir une liste non ordonnée*/
+  .navbar ul {
+    margin: right;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  /*appliquée aux éléments de liste de la barre de navigation*/
+  .navbar li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+ /*appliquée aux liens (balise <a>) de la barre de navigation*/ 
+  .navbar a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+  }
+  /*lorsque le curseur est positionné sur un lien de la barre de navigation et que le lien est survolé par la souris.*/
+  .navbar a:hover {
+    border-bottom: 2px solid #df7935;
+  }
+
+  .logo-icon {
+    font-size: 2rem;
+    color: rgb(210, 42, 42);
+    text-shadow: 1px 1px #333;
+  }
+
+
+
+p{
+  font-size: 14px;
+  font-weight:100;
+  line-height: 20px;
+  letter-spacing: .5px;
+  margin: 20px 0 30px;
+  font-family: 'Pathway Extreme', sans-serif;
+}
+

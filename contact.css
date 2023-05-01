@@ -1,0 +1,318 @@
+/* Styles pour le corps de la page */
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+  }
+  
+    /* Styles pour la bannière */
+    .banner {
+      background-color: #bedfff;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+    /*Cet élément est un conteneur pour le logo et le menu de navigation*/
+    .banner .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    /*Cet élément contient le titre du site*/
+  .banner .logo h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+      font-family: 'Caveat', cursive;
+    }
+    /*Cet élément contient le sous-titre du site*/
+    .banner .logo p {
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+      font-family: 'Pacifico', cursive;
+    }
+    .banner img {
+      width: 100px;
+      height: auto;
+      margin-right: 20px;
+  }
+    
+    /* Styles pour le menu */
+    .navbar {
+      background-color: #bedfff;
+      text-align: center;
+      display: flex;
+      padding: 10px 0;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 60vw;
+    }
+    /*l'élément HTML utilisé pour définir une liste non ordonnée*/
+    .navbar ul {
+      margin: right;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+    }
+    /*appliquée aux éléments de liste de la barre de navigation*/
+    .navbar li {
+      display: inline-block;
+      margin-right: 20px;
+      font-size:15px;
+      font-family:"arial";
+      font-weight:600;
+      list-style: none;
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+      transition: color 0.5s;
+    }
+   
+   /*appliquée aux liens (balise <a>) de la barre de navigation*/ 
+    .navbar a {
+      display: block;
+      color: #050505;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+    }
+    /*lorsque le curseur est positionné sur un lien de la barre de navigation et que le lien est survolé par la souris.*/
+    .navbar a:hover {
+      border-bottom: 2px solid #7ac3ff;
+    }
+  
+    button{
+      padding:3px 15px;
+      border: none;
+      border-radius:20px;
+      color: white;
+      background-color:#7ac3ff;
+      cursor: pointer;
+  }
+  button:hover{
+      background-color:rgb(3, 1, 88);
+  }
+
+
+
+
+
+body {
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    color: #5f7d95;
+    font-family: "Proxima Nova","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+
+
+/*pied de page*/
+ /*Styles pour la div container*/ 
+ .container {
+    display:table-footer-group;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .container-footer {
+    display:table-footer-group;
+    flex-wrap:wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 10px;
+    margin: 0 ;
+    padding: 2px;
+    
+  }
+  .section-footer {
+      padding: 6% 2% 4%;
+      background-color: #feedcd;
+  }
+  * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+  }
+  .container__1280 { /*les titres*/
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      color:#df7935;
+  }
+  
+  
+  .grid__footer {
+      margin-top: 8%;
+      margin-bottom: 6%;
+      grid-column-gap: 400px;
+      grid-row-gap: 400px;
+      margin: 0% 20% 4%;
+     
+    
+  }
+  
+  
+  
+  .w-layout-grid {
+    display: -ms-grid;
+    display:inline-flex;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+    margin-left: 40px;
+    margin-right: 400px;
+    
+   
+  }
+  
+  .container__1280 {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      
+  }
+  
+  .grid__social-footer {
+    margin-top: 10%;
+  
+  }
+  
+  .grid__social-footer {
+    margin-top: 4%;
+    grid-row-gap: 16px;
+    -ms-grid-columns: 1fr 0.25fr 0.25fr;
+    grid-template-columns: 1fr 0.25fr 0.25fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+  }
+  
+  
+  
+  
+  .grid__social-icons {
+      width: 1%;
+    
+  
+  }
+  .w-layout-grid {
+    
+    display: flex;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 60px;
+    grid-column-gap: 60px;
+  }
+   .social-title{
+  margin-left: 33px;
+   }
+  
+   
+
+
+
+.container-raised {
+    margin: 30px;
+    padding: 10px;
+    color: #000000;
+    position: relative;
+    overflow:hidden;
+    min-height: 400px;
+    width: 768px;
+    max-width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 32, 63, .45),  0 8px 8px rgba(0, 32, 63, .45);
+    margin-left: 100px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    display: grid;
+
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sub-title {
+    margin: 1px;
+    display: block;
+    font-weight: bold;
+    text-align: left;
+}
+
+button{
+    padding:3px 15px;
+    border: none;
+    border-radius:20px;
+    color: white;
+    background-color:#7ac3ff;
+    cursor: pointer;
+}
+button:hover{
+    background-color:rgb(3, 1, 88);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  
