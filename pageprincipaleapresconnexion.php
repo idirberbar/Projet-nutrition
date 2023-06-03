@@ -1,0 +1,246 @@
+<?php 
+    session_start();
+    require_once 'config.php'; // ajout connexion bdd 
+   // si la session existe pas soit si l'on est pas connecté on redirige
+    if(!isset($_SESSION['user'])){
+        header('Location:seconnecterphp.php');
+        die();
+    }
+
+ 
+   
+?> 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fitia</title>
+    <!-- Chargement des feuilles de style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"  />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Oswald:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pageprincipale.css" />
+  </head>
+  <body>
+  
+    <!-- Bannière et menu -->
+    <header>
+      <div class="banner">
+        <div class="container">
+          <div class="logo">
+            <h1>FITIA</h1>
+            <p>Health is wealth</p>
+          </div>
+          <!-- Menu -->
+          <nav class="navbar">
+            <ul>
+              <li><a href="pageprincipale.html#pageprincipale">Home</a></li>
+              <li><a href="sport.html#sport">Sport</a></li>
+              <li><a href="nutrition.html#nutrition">Nutrition</a></li>
+              <li><a href="apropos.html#apropos">A propos</a></li>
+              <li><a href="contact.html#contact">Contact</a></li>
+            </ul>
+            <button><a href="deconnexion.php">Déconnexion</a></button>
+          </nav>
+          
+        </div>
+        
+      </div>
+      
+    </header>
+    <div class="content">
+      <div class="content__left">
+          <h2>Bienvene sur Fitia  <?php echo $data['nom']; ?> !</h2>
+          <p>Découvrez une nouvelle façon de vivre votre passion pour le sport et de prendre soin de votre corps avec notre expertise en nutrition et nos programmes d'entraînement personnalisés.</p>
+          
+
+      </div>
+      <div class="content__right">
+          <img src="https://img.freepik.com/premium-photo/high-vitamin-c-food-isolated-white-background-top-view_123827-16529.jpg?size=626&ext=jpg&ga=GA1.1.1770928704.1682770654&semt=ais" alt="">
+          
+
+      </div>
+  </div>
+     
+   <br><br> 
+   <h2 class="section-title" >
+   
+    Vous pouvez:
+
+</h2>
+  <section class="fonctionnalites" id="fonctionnalites">
+
+    <div class="fonctionnalites-item">
+        <img src="C:\xampp\htdocs\projet web\schedule (1).png" alt="Mon icône" width="50" height="50">
+        <p class="fonctionnalites-details">Commencer votre voyage santé</p>
+    </div>
+    <div class="fonctionnalites-item">
+      <img src="C:\xampp\htdocs\projet web\health.png" alt="Mon icône" width="50" height="50">
+        <p class="fonctionnalites-details">Suivre un programme de sport personnalisé</p>
+    </div>
+    <div class="fonctionnalites-item">
+      <img src="C:\xampp\htdocs\projet web\healthy-food.png" alt="Mon icône" width="50" height="50">
+        <p class="fonctionnalites-details">Trouvrer le régime idéal</p>
+    </div>
+</section> 
+
+<br><br><br>
+<section id="recettes">
+<h1 class="section-title">Nos recettes</h1>
+  <div class="images">
+    <ul>
+      <li class="recette">
+        <div>
+          <img src="C:\xampp\htdocs\projet web\photo1.jpg" alt="">
+        </div>
+        <span>Objectif:</span>
+        <span class="objectif">Perte de poids</span>
+        <a href="nutrition.html">SUIVRE LE PROGRAMME</a>
+      </li> <li class="recette">
+        <div>
+          <img src="C:\xampp\htdocs\projet web\photo2.jpg" alt="">
+        </div>
+        <span>Objectif:</span>
+        <span class="objectif">Couvrir les besoins nutritionnels </span>
+        <a href="nutrition.html">SUIVRE LE PROGRAMME</a>
+      </li>
+      <li class="recette">
+        <div>
+          <img src="C:\xampp\htdocs\projet web\photo3.jpg" alt="">
+        </div>
+        <span>Objectif:</span>
+        <span class="objectif">Prendre du poids</span>
+        <a href="nutrition.html">SUIVRE LE PROGRAMME</a>
+      </li> 
+
+    </ul>
+
+  </div>
+
+</section>
+
+<section id="recettes">
+<h1 class="section-title2">Nos programmes sportifs</h1>
+  <div class="images">
+    <ul>
+      <li class="recette">
+        <div>
+          <img src="C:\xampp\htdocs\projet web\photo4.jpg" alt="">
+        </div>
+        <span>Programme:</span>
+        <span class="objectif">Fitness</span>
+        <a href="sport.html">SUIVRE LE PROGRAMME</a>
+      </li> <li class="recette">
+        <div>
+          <img src="C:\xampp\htdocs\projet web\photo5.jpg" alt="">
+        </div>
+        <span>Programme:</span>
+        <span class="objectif">Yoga</span>
+        <a href="sport.html">SUIVRE LE PROGRAMME</a>
+      </li>
+      <li class="recette">
+        <div>
+          <img src="C:\xampp\htdocs\projet web\photo6.jpg" alt="">
+        </div>
+        <span>Programme:</span>
+        <span class="objectif">Musculation  </span>
+        <a href="sport.html">SUIVRE LE PROGRAMME</a>
+      </li> 
+
+    </ul>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<footer>
+  <div class="container-footer">
+  <div class="section-footer wf-section">
+    <div class="container__1280 ">
+        <div class="w-layout-grid grid__footer">
+            
+            <div id="w-node-_722c24af-1ba2-a296-2297-e88a2a92f1e7-f4b7341e" class="div__footer-column-1">
+                <p class="p__footer-menu-title-3">Le Produit</p>
+                <p class="p__footer-menu-list-1">
+                    <a href="" text-decoration="none" class="link__footer">Pour les particuliers<br></a><br>
+                    <a href="" class="link__footer">Pour les professionnels<br></a><br>
+                    <a href="politique.html" class="link__footer">Confidentialité<br></a><br>
+                    <a href="conditions.html" class="link__footer">Conditions</a><br>
+                </p>
+            </div>
+            <div class="div__footer-column-2">
+              <p class="p__footer-menu-title-3">Aide</p>
+              <p class="p__footer-menu-list-3">
+                  <a href="" target="_blank" class="link__footer">FAQ<br></a><br>
+                  <a href="contact.html" class="link__footer">Contact</a>
+              </p>
+          </div>
+            <div class="div__footer-column-3">
+                <p class="p__footer-menu-title-2"> Lorem Ipsum</p>
+                <p class="p__footer-menu-list-2">
+                    <a href="" class="link__footer w--current"> Lorem Ipsum <br></a><br>
+                    <a href="" target="_blank" class="link__footer"> Lorem Ipsum<br></a>‍<br>
+                    <a href="" target="_blank" class="link__footer"> Lorem Ipsum<br></a>‍<br>
+                    <a href="" class="link__footer"> Lorem Ipsum<br></a>‍<br>
+                    <a href="" target="_blank" class="link__footer"> Lorem Ipsum</a>
+                </p>
+            </div>
+            
+        </div>
+       <div class="div__top-border"></div>
+       <p class="social-title">Se connecter</p>
+        <div class="w-layout-grid grid__social-footer">
+            <div id="w-node-_713113e5-e47a-0a3e-b095-92729d296c69-f4b7341e" class="w-layout-grid grid__social-icons">
+                <a href="" target="_blank" class="link__footer-instagram w-inline-block"><img src="https://cdn1.cronometer.com/webflow/instragm-icon-snow-white.svg" alt="fitia-instagram-link" class="image__instagram-icon-footer"></a>
+                <a href="" target="_blank" class="link__footer-facebook w-inline-block"><img src="https://cdn1.cronometer.com/webflow/facebook-icon-snow-white.svg" alt="fitia-facebook-link" class="image__facebook-icon"></a>
+                <a href="" target="_blank" class="link__footer-twitter w-inline-block"><img src="https://cdn1.cronometer.com/webflow/twitter-icon-snow-white.svg" alt="fitia-twitter-link" class="image__twitter-icon"></a>
+                <a href="" target="_blank" class="link__footer-youtube w-inline-block"><img src="https://cdn1.cronometer.com/webflow/youtube-icon-snow-white.svg" loading="lazy" alt="" class="image__youtube-icon"></a>
+            </div>
+            
+            
+        </div>
+        
+    </div>
+  </div>
+  </div>
+  </footer>
+
+</body>
+</html>
